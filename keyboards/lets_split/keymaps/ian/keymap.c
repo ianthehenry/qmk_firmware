@@ -83,20 +83,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Adjust (Lower + Raise)
  * .-----------------------------------------.  .-----------------------------------------.
- * | Reset|      |      |      |      |      |  | |<<  | Play | >>|  |      |      |Qwerty|
+ * | Reset| F1   | F2   | F3   | F4   | F5   |  | F6   | F7   | F8   | F9   | F10  |Qwerty|
  * |------+------+------+------+------+------|  |------+------+------+------+------+------|
- * |      |      |      |      |      |      |  | Mute | Vol- | Vol+ |      |      |Worknm|
+ * |      | F11  | F12  |      |      |      |  | Mute | Vol- | Vol+ | Br-  | Br+  |Worknm|
  * |------+------+------+------+------+------|  |------+------+------+------+------+------|
- * |      |      |      |      |      |      |  |      |      |      |      |      |      |
+ * |      |      |      |      |      |      |  | |<<  | Play | >>|  |      |      |      |
  * |------+------+------+------+------+------|  +------+------+------+------+------+------|
  * |      |      |      |      |      |      |  |      |      |      |      |      |      |
  * '-----------------------------------------'  '-----------------------------------------'
  */
 // keep alt around, for option-volume, in case i ever, ever press that
 [_ADJUST] =  LAYOUT_ortho_4x12( \
-  RESET  , XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,       KC_MPRV, KC_MPLY, KC_MNXT, XXXXXXX, XXXXXXX, QWERTY , \
-  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,       KC_MUTE, KC_VOLD, KC_VOLU, XXXXXXX, XXXXXXX, WORKMAN, \
-  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
+  RESET  , KC_F1  , KC_F2  , KC_F3  , KC_F4  , KC_F5  ,       KC_F6  , KC_F7  , KC_F8  , KC_F9  , KC_F10 , QWERTY , \
+  XXXXXXX, KC_F11 , KC_F12 , XXXXXXX, XXXXXXX, XXXXXXX,       KC_MUTE, KC_VOLD, KC_VOLU, KC_BRID, KC_BRIU, WORKMAN, \
+  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,       KC_MPRV, KC_MPLY, KC_MNXT, XXXXXXX, XXXXXXX, XXXXXXX, \
   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX  \
 )
 
