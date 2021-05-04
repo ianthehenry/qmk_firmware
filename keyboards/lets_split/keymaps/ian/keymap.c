@@ -28,7 +28,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|   |------+------+------+------+------+------|
  * |Lower |   Z  |   X  |   C  |   V  |   B  |   |   N  |   M  |   ,  |   .  |   /  |Raise |
  * |------+------+------+------+------+------|   |------+------+------+------+------+------|
- * | Ctl  | Ctl  |      | Alt  | Cmd  |Shift |   |Space |Bksp  | Ret  |      |      |      |
+ * | Ctrl | Ctrl |      | Alt  | Cmd  |Shift |   |Space |Bksp  |Enter |      |      |      |
  * '-----------------------------------------'   '-----------------------------------------'
  */
 [_QWERTY] = LAYOUT_ortho_4x12(
@@ -47,7 +47,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Lower
  * .-----------------------------------------.  .-----------------------------------------.
- * |      |      | PgUp |  Up  | PgDn |      |  |      |   7  |   8  |   9  |   :  |  -   |
+ * | Term |      | PgUp |  Up  | PgDn |      |  |      |   7  |   8  |   9  |   :  |  -   |
  * |------+------+------+------+------+------|  |------+------+------+------+------+------|
  * |      | Home | Left | Down |Right | End  |  |   =  |   4  |   5  |   6  |   0  |      |
  * |------+------+------+------+------+------|  |------+------+------+------+------+------|
@@ -57,7 +57,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * '-----------------------------------------'  '-----------------------------------------'
  */
 [_LOWER] = LAYOUT_ortho_4x12( \
-  XXXXXXX, XXXXXXX, KC_PGUP, KC_UP  , KC_PGDN, XXXXXXX,       XXXXXXX, KC_7   , KC_8   , KC_9   , KC_COLN, KC_MINS, \
+C(KC_GRV), XXXXXXX, KC_PGUP, KC_UP  , KC_PGDN, XXXXXXX,       XXXXXXX, KC_7   , KC_8   , KC_9   , KC_COLN, KC_MINS, \
   XXXXXXX, KC_HOME, KC_LEFT, KC_DOWN, KC_RGHT, KC_END ,       KC_EQL , KC_4   , KC_5   , KC_6   , KC_0   , XXXXXXX, \
   _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,       KC_COMM, KC_1   , KC_2   , KC_3   , KC_PDOT, _______, \
   _______, _______, _______, _______, _______, _______,       _______, _______, _______, _______, _______, _______  \
